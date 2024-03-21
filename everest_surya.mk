@@ -12,18 +12,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common EverestOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/everest/config/common_full_phone.mk)
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
-EVEREST_BUILD_TYPE := UNOFFICIAL
-EVEREST_MAINTAINER := HinohArata
+
+# Maintainer
+EVEREST_BUILD_TYPE := OFFICIAL
+EVEREST_MAINTAINER := Skyy丨HinohArata
 
 # Extra Stuffs
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_BLUR := true
 TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
+# Innertune
+TARGET_BUILD_INNERTUNE := true
 
 # Device identifier.
 PRODUCT_NAME := everest_surya
