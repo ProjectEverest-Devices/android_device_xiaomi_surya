@@ -122,8 +122,3 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     group nfc
     task_profiles ServiceCapacityLow
     disabled
-
-on boot
-    # FPS Info permissions
-    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
-    chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
