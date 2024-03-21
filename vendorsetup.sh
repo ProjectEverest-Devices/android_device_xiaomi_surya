@@ -1,8 +1,8 @@
 # Clone Vendor Source
-git clone https://github.com/ProjectEverest-Devices/android_vendor_xiaomi_surya kernel/xiaomi/surya
+git clone https://github.com/ProjectEverest-Devices/android_vendor_xiaomi_surya vendor/xiaomi/surya
 
 # Clone Kernel Source
-git clone https://github.com/ProjectEverest-Devices/android_kernel_xiaomi_surya.git vendor/xiaomi/surya
+git clone https://github.com/ProjectEverest-Devices/android_kernel_xiaomi_surya.git kernel/xiaomi/surya
 
 # Clone Vendor Leica/Miui Camera
 git clone https://gitlab.com/HinohArata/vendor_xiaomi_surya-miuicamera.git -b new vendor/xiaomi/surya-miuicamera
